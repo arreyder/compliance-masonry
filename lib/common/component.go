@@ -3,7 +3,7 @@ package common
 import "github.com/blang/semver"
 
 // Component is the basic building block for all systems.
-// Schema info: https://github.com/arreyder/schemas#component-yaml
+// Schema info: https://github.com/opencontrol/schemas#component-yaml
 //
 // GetName returns the name of the component
 //

@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 	"github.com/blang/semver"
-	"github.com/arreyder/compliance-masonry/lib/common"
-	"github.com/arreyder/compliance-masonry/tools/constants"
-	"github.com/arreyder/compliance-masonry/tools/fs"
+	"github.com/opencontrol/compliance-masonry/lib/common"
+	"github.com/opencontrol/compliance-masonry/tools/constants"
+	"github.com/opencontrol/compliance-masonry/tools/fs"
 	"path/filepath"
 )
 

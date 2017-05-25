@@ -4,12 +4,12 @@ import (
 	"sort"
 
 	"github.com/blang/semver"
-	"github.com/arreyder/compliance-masonry/lib/common"
+	"github.com/opencontrol/compliance-masonry/lib/common"
 	"gopkg.in/fatih/set.v0"
 )
 
 // Component struct is an individual component requiring documentation
-// Schema info: https://github.com/arreyder/schemas#component-yaml
+// Schema info: https://github.com/opencontrol/schemas#component-yaml
 type Component struct {
 	Name            string                        `yaml:"name" json:"name"`
 	Key             string                        `yaml:"key" json:"key"`
@@ -73,7 +73,7 @@ func (c Component) GetResponsibleRole() string {
 // Satisfies struct contains data demonstrating why a specific component meets
 // a control
 // This struct is a one-to-one mapping of a `satisfies` item in the component.yaml schema
-// https://github.com/arreyder/schemas#component-yaml
+// https://github.com/opencontrol/schemas#component-yaml
 type Satisfies struct {
 	ControlKey             string               `yaml:"control_key" json:"control_key"`
 	StandardKey            string               `yaml:"standard_key" json:"standard_key"`

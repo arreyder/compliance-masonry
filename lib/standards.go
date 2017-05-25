@@ -3,8 +3,8 @@ package lib
 import (
 	"sync"
 
-	"github.com/arreyder/compliance-masonry/lib/common"
-	"github.com/arreyder/compliance-masonry/lib/standards"
+	"github.com/opencontrol/compliance-masonry/lib/common"
+	"github.com/opencontrol/compliance-masonry/lib/standards"
 )
 
 // standardsMap struct is a thread save mapping of Standards

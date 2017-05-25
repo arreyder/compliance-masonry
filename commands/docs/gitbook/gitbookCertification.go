@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"path/filepath"
 
-	"github.com/arreyder/compliance-masonry/lib/common"
+	"github.com/opencontrol/compliance-masonry/lib/common"
 )
 
 func (openControl *OpenControlGitBook) getResponsibleRole(text string, component common.Component) string {

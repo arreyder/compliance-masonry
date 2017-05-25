@@ -4,8 +4,8 @@ import (
 	"errors"
 	. "github.com/onsi/ginkgo"
 	"github.com/onsi/ginkgo/extensions/table"
-	commonMocks "github.com/arreyder/compliance-masonry/lib/common/mocks"
-	"github.com/arreyder/compliance-masonry/tools/vcs/mocks"
+	commonMocks "github.com/opencontrol/compliance-masonry/lib/common/mocks"
+	"github.com/opencontrol/compliance-masonry/tools/vcs/mocks"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -19,7 +19,7 @@ var _ = Describe("Downloader", func() {
 	Describe("Downloading Entry from VCS", func() {
 		table.DescribeTable("DownloadRepo", func(err error) {
 			remoteSource := new(commonMocks.RemoteSource)
-			remoteSource.On("GetURL").Return("https://github.com/arreyder/notarealrepo")
+			remoteSource.On("GetURL").Return("https://github.com/opencontrol/notarealrepo")
 			remoteSource.On("GetRevision").Return("master")
 			m := new(mocks.RepoManager)
 			m.On("Clone", remoteSource.GetURL(), remoteSource.GetRevision(), ".").Return(err)

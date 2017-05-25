@@ -1,7 +1,7 @@
 package common
 
 // OpenControl is an interface that every OpenControl yaml version should implement.
-// Schema info: https://github.com/arreyder/schemas#opencontrolyaml
+// Schema info: https://github.com/opencontrol/schemas#opencontrolyaml
 //
 // GetCertifications retrieves the list of certifications
 //

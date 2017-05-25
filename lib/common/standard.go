@@ -1,7 +1,7 @@
 package common
 
 // Standard is the container of all the information for a particular Standard.
-// Schema info: https://github.com/arreyder/schemas#standards-documentation
+// Schema info: https://github.com/opencontrol/schemas#standards-documentation
 //
 // GetName returns the name
 //

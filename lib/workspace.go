@@ -8,12 +8,12 @@ import (
 	"sync"
 
 	"github.com/codegangsta/cli"
-	"github.com/arreyder/compliance-masonry/lib/common"
-	"github.com/arreyder/compliance-masonry/lib/result"
+	"github.com/opencontrol/compliance-masonry/lib/common"
+	"github.com/opencontrol/compliance-masonry/lib/result"
 )
 
 // localWorkspace struct combines components, standards, and a certification data
-// For more information on the opencontrol schema visit: https://github.com/arreyder/schemas
+// For more information on the opencontrol schema visit: https://github.com/opencontrol/schemas
 type localWorkspace struct {
 	components     *componentsMap
 	standards      *standardsMap

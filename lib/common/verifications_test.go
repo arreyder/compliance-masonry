@@ -1,7 +1,7 @@
 package common_test
 
 import (
-	"github.com/arreyder/compliance-masonry/lib/common"
+	"github.com/opencontrol/compliance-masonry/lib/common"
 	"testing"
 )
 

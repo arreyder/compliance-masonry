@@ -7,11 +7,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/arreyder/compliance-masonry/commands/docs"
-	"github.com/arreyder/compliance-masonry/commands/docs/gitbook"
-	"github.com/arreyder/compliance-masonry/commands/get"
-	"github.com/arreyder/compliance-masonry/tools/constants"
-	"github.com/arreyder/compliance-masonry/tools/fs"
+	"github.com/opencontrol/compliance-masonry/commands/docs"
+	"github.com/opencontrol/compliance-masonry/commands/docs/gitbook"
+	"github.com/opencontrol/compliance-masonry/commands/get"
+	"github.com/opencontrol/compliance-masonry/tools/constants"
+	"github.com/opencontrol/compliance-masonry/tools/fs"
 	"github.com/codegangsta/cli"
 )
 

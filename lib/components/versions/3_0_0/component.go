@@ -2,7 +2,7 @@ package component
 
 import (
 	//	"fmt"
-	"github.com/arreyder/compliance-masonry/lib/common"
+	"github.com/opencontrol/compliance-masonry/lib/common"
 	"github.com/blang/semver"
 )
 

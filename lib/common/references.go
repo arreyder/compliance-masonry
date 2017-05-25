@@ -3,7 +3,7 @@ package common
 // GeneralReference struct contains data for the name and path of a
 // compliance reference.
 // This struct is a one-to-one mapping of `references` in the component.yaml schema
-// https://github.com/arreyder/schemas#component-yaml
+// https://github.com/opencontrol/schemas#component-yaml
 type GeneralReference struct {
 	Name string `yaml:"name" json:"name"`
 	Path string `yaml:"path" json:"path"`
@@ -16,7 +16,7 @@ type GeneralReferences []GeneralReference
 // VerificationReference struct is a general reference that verifies a specific
 // control, it can be pointed to in the control documentation.
 // This struct is a one-to-one mapping of `verifications` in the component.yaml schema
-// https://github.com/arreyder/schemas#component-yaml
+// https://github.com/opencontrol/schemas#component-yaml
 type VerificationReference struct {
 	GeneralReference `yaml:",inline"`
 	Key              string `yaml:"key" json:"key"`
@@ -28,7 +28,7 @@ type VerificationReferences []VerificationReference
 // CoveredBy struct is the pointing mechanism for for referring to
 // VerificationReferences in the documentation.
 // This struct is a one-to-one mapping of `covered_by` in the component.yaml schema
-// https://github.com/arreyder/schemas#component-yaml
+// https://github.com/opencontrol/schemas#component-yaml
 type CoveredBy struct {
 	ComponentKey    string `yaml:"component_key" json:"component_key"`
 	VerificationKey string `yaml:"verification_key" json:"verification_key"`

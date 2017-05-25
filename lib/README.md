@@ -1,6 +1,6 @@
 # Lib Package
 
-[![GoDoc](https://godoc.org/github.com/arreyder/compliance-masonry/lib?status.svg)](https://godoc.org/github.com/arreyder/compliance-masonry/lib)
+[![GoDoc](https://godoc.org/github.com/opencontrol/compliance-masonry/lib?status.svg)](https://godoc.org/github.com/opencontrol/compliance-masonry/lib)
 
 ## Purpose
 
@@ -27,7 +27,7 @@ Workspace is the representation of your working space with all the
 resources gathered together.
 - How to obtain a workspace:
   ```go
-  import "github.com/arreyder/compliance-masonry/lib"
+  import "github.com/opencontrol/compliance-masonry/lib"
   
   // some other code
   
@@ -41,7 +41,7 @@ Standard is representation of all the controls for a certain standard
 Once you have a workspace object, you can use `GetStandard` and provide
 a standard key. For more information about the key value to used or more
 information about standards, refer to the
-[standard schema](https://github.com/arreyder/schemas#standards).
+[standard schema](https://github.com/opencontrol/schemas#standards).
 
 #### Component
 Component is a basic block of compliance information that corresponds to
@@ -50,7 +50,7 @@ a control or set of controls.
 Once you have a workspace object, you can use `GetAllComponents` or
 `GetComponent`and provide a component key. For more information about 
 the key value to used or more information about the component, refer to
-the [component schema](https://github.com/arreyder/schemas#components).
+the [component schema](https://github.com/opencontrol/schemas#components).
 
 #### Certification
 Certification is a list of controls that make up a certain
@@ -58,7 +58,7 @@ Certification is a list of controls that make up a certain
 
 Once you have a workspace object, you can use `GetCertification`.
 For more information about the certification, refer to the
-[certification schema](https://github.com/arreyder/schemas#certifications).
+[certification schema](https://github.com/opencontrol/schemas#certifications).
 
 ### Result Data
 `Verification` is a data structure that is not represented in yaml but

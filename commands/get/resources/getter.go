@@ -1,11 +1,11 @@
 package resources
 
 import (
-	"github.com/arreyder/compliance-masonry/lib/common"
-	"github.com/arreyder/compliance-masonry/lib/opencontrol"
-	"github.com/arreyder/compliance-masonry/tools/constants"
-	"github.com/arreyder/compliance-masonry/tools/fs"
-	"github.com/arreyder/compliance-masonry/tools/mapset"
+	"github.com/opencontrol/compliance-masonry/lib/common"
+	"github.com/opencontrol/compliance-masonry/lib/opencontrol"
+	"github.com/opencontrol/compliance-masonry/tools/constants"
+	"github.com/opencontrol/compliance-masonry/tools/fs"
+	"github.com/opencontrol/compliance-masonry/tools/mapset"
 	"log"
 	"os"
 	"path/filepath"

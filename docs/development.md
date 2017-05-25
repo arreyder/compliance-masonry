@@ -8,11 +8,11 @@ Interested in contributing to Masonry? Awesome! Take a look at our [contribution
 1. Install the tool.
 
     ```sh
-    go get github.com/arreyder/compliance-masonry
+    go get github.com/opencontrol/compliance-masonry
     compliance-masonry
     ```
 
-This should print out usage documentation. You can find the code in `$GOPATH/src/github.com/arreyder/compliance-masonry/`.
+This should print out usage documentation. You can find the code in `$GOPATH/src/github.com/opencontrol/compliance-masonry/`.
 
 ## Running tests
 

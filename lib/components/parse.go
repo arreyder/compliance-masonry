@@ -4,10 +4,10 @@ import (
 	"fmt"
 
 	"github.com/blang/semver"
-	"github.com/arreyder/compliance-masonry/lib/common"
-	v2 "github.com/arreyder/compliance-masonry/lib/components/versions/2_0_0"
-	v3 "github.com/arreyder/compliance-masonry/lib/components/versions/3_0_0"
-	v31 "github.com/arreyder/compliance-masonry/lib/components/versions/3_1_0"
+	"github.com/opencontrol/compliance-masonry/lib/common"
+	v2 "github.com/opencontrol/compliance-masonry/lib/components/versions/2_0_0"
+	v3 "github.com/opencontrol/compliance-masonry/lib/components/versions/3_0_0"
+	v31 "github.com/opencontrol/compliance-masonry/lib/components/versions/3_1_0"
 	"gopkg.in/yaml.v2"
 )
 

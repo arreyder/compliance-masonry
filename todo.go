@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/arreyder/compliance-masonry/commands/diff"
+	"github.com/opencontrol/compliance-masonry/commands/diff"
 	"github.com/codegangsta/cli"
 	"github.com/tg/gosortmap"
 )

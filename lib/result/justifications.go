@@ -3,7 +3,7 @@ package result
 import (
 	"sync"
 
-	"github.com/arreyder/compliance-masonry/lib/common"
+	"github.com/opencontrol/compliance-masonry/lib/common"
 )
 
 // Justifications struct contains the mapping that links controls to specific components

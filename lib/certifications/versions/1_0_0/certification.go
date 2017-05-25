@@ -6,7 +6,7 @@ import (
 )
 
 // Certification struct is a collection of specific standards and controls
-// Schema info: https://github.com/arreyder/schemas#certifications
+// Schema info: https://github.com/opencontrol/schemas#certifications
 type Certification struct {
 	Key       string                            `yaml:"name" json:"name"`
 	Standards map[string]map[string]interface{} `yaml:"standards" json:"standards"`
