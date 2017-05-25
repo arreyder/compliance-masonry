@@ -5,8 +5,8 @@ import (
 	. "github.com/onsi/ginkgo/extensions/table"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/opencontrol/compliance-masonry/lib/common"
-	"github.com/opencontrol/compliance-masonry/tools/constants"
+	"github.com/arreyder/compliance-masonry/lib/common"
+	"github.com/arreyder/compliance-masonry/tools/constants"
 )
 
 var _ = Describe("Opencontrol", func() {

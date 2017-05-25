@@ -1,7 +1,7 @@
 package certification_test
 
 import (
-	"github.com/opencontrol/compliance-masonry/lib/certifications/versions/1_0_0"
+	"github.com/arreyder/compliance-masonry/lib/certifications/versions/1_0_0"
 	"testing"
 )
 

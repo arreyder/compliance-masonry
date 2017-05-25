@@ -1,8 +1,8 @@
 package mocks
 
 import (
-	"github.com/opencontrol/compliance-masonry/lib/common"
-	"github.com/opencontrol/compliance-masonry/tools/constants"
+	"github.com/arreyder/compliance-masonry/lib/common"
+	"github.com/arreyder/compliance-masonry/tools/constants"
 	"github.com/stretchr/testify/mock"
 )
 

@@ -7,7 +7,7 @@ To learn about Compliance Masonry at a high level:
 
 ## Benefits
 
-Modern applications are built on existing systems such as S3, EC2, and Cloud Foundry. Documentation for how these underlying systems fulfill NIST controls or PCI SSC Data Security Standards is a prerequisite for receiving authorization to operate (ATO). Unlike most [System Security Plan documentation](http://csrc.nist.gov/publications/nistpubs/800-18-Rev1/sp800-18-Rev1-final.pdf), Compliance Masonry documentation is built using [OpenControl Schema](https://github.com/opencontrol/schemas), a machine readable format for storing compliance documentation.
+Modern applications are built on existing systems such as S3, EC2, and Cloud Foundry. Documentation for how these underlying systems fulfill NIST controls or PCI SSC Data Security Standards is a prerequisite for receiving authorization to operate (ATO). Unlike most [System Security Plan documentation](http://csrc.nist.gov/publications/nistpubs/800-18-Rev1/sp800-18-Rev1-final.pdf), Compliance Masonry documentation is built using [OpenControl Schema](https://github.com/arreyder/schemas), a machine readable format for storing compliance documentation.
 
 Compliance Masonry simplifies the process of certification documentations by providing:
 
@@ -17,7 +17,7 @@ Compliance Masonry simplifies the process of certification documentations by pro
 
 ## Examples
 
-See [this list of OpenControl project examples](https://github.com/opencontrol/schemas/#full-project-examples).
+See [this list of OpenControl project examples](https://github.com/arreyder/schemas/#full-project-examples).
 
 ---
 

@@ -109,7 +109,7 @@ var _ = Describe("Masonry CLI", func() {
 })
 
 func Masonry(args ...string) *Session {
-	path, err := Build("github.com/opencontrol/compliance-masonry")
+	path, err := Build("github.com/arreyder/compliance-masonry")
 	Expect(err).NotTo(HaveOccurred())
 	cmd := exec.Command(path, args...)
 	stdin, err := cmd.StdinPipe()

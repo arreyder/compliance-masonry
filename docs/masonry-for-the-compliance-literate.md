@@ -9,9 +9,9 @@ Compliance Masonry is a set of tools that restructure the process of writing, up
 
 Teams write control justifications as structured data in YAML files, like so:
 
-https://github.com/opencontrol/schemas#components
+https://github.com/arreyder/schemas#components
 
-The control justifications are then grouped into ["components"](https://github.com/opencontrol/schemas#components) (representing the parts of a system that deal with specific security requirements), which Compliance Masonry merges together to represent the overall system. cloud.gov, for example, reuses open source code from the [Cloud Foundry](https://www.cloudfoundry.org/) and [Concourse](http://concourse.ci/) open source projects, so cloud.gov is writing many control statements that explain security measures in Cloud Foundry and Concourse. The cloud.gov team publishes those component-specific control statements as structured data that other Cloud Service Providers (CSPs) using one or both of those open source components can adapt for their control documentation. Systems deployed to cloud.gov can then import cloud.gov’s full set of control descriptions, bringing along the control justifications for everything below.
+The control justifications are then grouped into ["components"](https://github.com/arreyder/schemas#components) (representing the parts of a system that deal with specific security requirements), which Compliance Masonry merges together to represent the overall system. cloud.gov, for example, reuses open source code from the [Cloud Foundry](https://www.cloudfoundry.org/) and [Concourse](http://concourse.ci/) open source projects, so cloud.gov is writing many control statements that explain security measures in Cloud Foundry and Concourse. The cloud.gov team publishes those component-specific control statements as structured data that other Cloud Service Providers (CSPs) using one or both of those open source components can adapt for their control documentation. Systems deployed to cloud.gov can then import cloud.gov’s full set of control descriptions, bringing along the control justifications for everything below.
 
 Componentizing of compliance information also means that any other systems built on top of Amazon Web Services (AWS), for example, could inherit those same control justifications, without needing to re-write them. Furthermore, if something compliance-related changes at the AWS level, this can be updated in one place, and automatically propagate out to the compliance documentation for the downstream systems.
 
@@ -41,4 +41,4 @@ While these are major benefits for the productivity of teams producing complianc
 
 The goal is not just to be able to create documentation in an automated fashion, but to be able to validate that the systems meet the controls as described in an automated way too. Compliance Masonry templates can run [executable specifications](https://en.wikipedia.org/wiki/Behavior-driven_development#Behavioral_specifications) which are used to continuously monitor that systems behave in the way they’re documented.
 
-Hopefully this gives you a better sense of the use case and goals of Compliance Masonry—please [reach out](https://github.com/opencontrol/discuss/issues/new) with any questions!
+Hopefully this gives you a better sense of the use case and goals of Compliance Masonry—please [reach out](https://github.com/arreyder/discuss/issues/new) with any questions!

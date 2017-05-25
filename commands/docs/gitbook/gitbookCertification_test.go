@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opencontrol/compliance-masonry/lib"
-	"github.com/opencontrol/compliance-masonry/tools/fs"
+	"github.com/arreyder/compliance-masonry/lib"
+	"github.com/arreyder/compliance-masonry/tools/fs"
 )
 
 type exportControlTest struct {

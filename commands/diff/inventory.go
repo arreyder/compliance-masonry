@@ -2,9 +2,9 @@ package diff
 
 import (
 	"fmt"
-	"github.com/opencontrol/compliance-masonry/lib"
-	"github.com/opencontrol/compliance-masonry/lib/common"
-	"github.com/opencontrol/compliance-masonry/tools/certifications"
+	"github.com/arreyder/compliance-masonry/lib"
+	"github.com/arreyder/compliance-masonry/lib/common"
+	"github.com/arreyder/compliance-masonry/tools/certifications"
 )
 
 // Inventory maintains the inventory of all the controls within a given workspace.
@@ -27,6 +27,21 @@ func (i *Inventory) retrieveMasterControlsList() {
 					continue
 				}
 				i.masterControlList[key] = standard.GetControl(controlKey)
+			}
+		}
+	}
+}
+
+// findCompletedControls will find the list of all documented, but not completed controls found within the workspace.
+func (i *Inventory) findCompletedControls() {
+	for _, component := range i.GetAllComponents() {
+		for _, satisfiedControl := range component.GetAllSatisfies() {
+			// We're looking for components that we've not established some level of compliance for.
+			if "completed" != satisfiedControl.GetImplementationStatus() {
+				key := standardAndControlString(satisfiedControl.GetStandardKey(), satisfiedControl.GetControlKey())
+				if _, exists := i.actualSatisfiedControls[key]; !exists {
+					i.actualSatisfiedControls[key] = satisfiedControl
+				}
 			}
 		}
 	}
@@ -90,6 +105,33 @@ func ComputeGapAnalysis(config Config) (Inventory, []error) {
 	i.retrieveMasterControlsList()
 	// Find the documented controls.
 	i.findDocumentedControls()
+	// Calculate the Missing controls / Non documented
+	i.calculateNonDocumentedControls()
+
+	return i, nil
+}
+
+func ComputeGapAnalysisTODO(config Config) (Inventory, []error) {
+	// Initialize inventory with certification
+	certificationPath, errs := certifications.GetCertification(config.OpencontrolDir, config.Certification)
+	if certificationPath == "" {
+		return Inventory{}, errs
+	}
+	workspace, _ := lib.LoadData(config.OpencontrolDir, certificationPath)
+	i := Inventory{
+		Workspace:               workspace,
+		masterControlList:       make(map[string]common.Control),
+		actualSatisfiedControls: make(map[string]common.Satisfies),
+		MissingControlList:      make(map[string]common.Control),
+	}
+	if i.GetCertification() == nil || i.GetAllComponents() == nil {
+		return Inventory{}, []error{fmt.Errorf("Unable to load data in %s for certification %s", config.OpencontrolDir, config.Certification)}
+	}
+
+	// Gather list of all controls for certification
+	i.retrieveMasterControlsList()
+	// Find the documented controls.
+	i.findCompletedControls()
 	// Calculate the Missing controls / Non documented
 	i.calculateNonDocumentedControls()
 

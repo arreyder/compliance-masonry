@@ -1,8 +1,9 @@
 package component
 
 import (
+	//	"fmt"
+	"github.com/arreyder/compliance-masonry/lib/common"
 	"github.com/blang/semver"
-	"github.com/opencontrol/compliance-masonry/lib/common"
 )
 
 // Component struct is an individual component requiring documentation

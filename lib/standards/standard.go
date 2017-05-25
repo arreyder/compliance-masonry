@@ -1,8 +1,8 @@
 package standards
 
 import (
-	"github.com/opencontrol/compliance-masonry/lib/common"
-	v1_0_0 "github.com/opencontrol/compliance-masonry/lib/standards/versions/1_0_0"
+	"github.com/arreyder/compliance-masonry/lib/common"
+	v1_0_0 "github.com/arreyder/compliance-masonry/lib/standards/versions/1_0_0"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 )

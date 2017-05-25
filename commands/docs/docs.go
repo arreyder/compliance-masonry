@@ -3,8 +3,8 @@ package docs
 import (
 	"os"
 
-	"github.com/opencontrol/compliance-masonry/commands/docs/gitbook"
-	"github.com/opencontrol/compliance-masonry/tools/certifications"
+	"github.com/arreyder/compliance-masonry/commands/docs/gitbook"
+	"github.com/arreyder/compliance-masonry/tools/certifications"
 )
 
 // MakeGitbook is the wrapper function that will create a gitbook for the specified certification.

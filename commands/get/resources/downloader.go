@@ -1,8 +1,8 @@
 package resources
 
 import (
-	"github.com/opencontrol/compliance-masonry/lib/common"
-	"github.com/opencontrol/compliance-masonry/tools/vcs"
+	"github.com/arreyder/compliance-masonry/lib/common"
+	"github.com/arreyder/compliance-masonry/tools/vcs"
 )
 
 // Downloader is a generic interface for how to download entries.

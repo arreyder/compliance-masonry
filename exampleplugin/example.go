@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/opencontrol/compliance-masonry/lib"
-	"github.com/opencontrol/compliance-masonry/lib/common"
+	"github.com/arreyder/compliance-masonry/lib"
+	"github.com/arreyder/compliance-masonry/lib/common"
 	"io"
 	"os"
 )

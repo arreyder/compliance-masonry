@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: /go/src/github.com/opencontrol/compliance-masonry
+    working_directory: /go/src/github.com/arreyder/compliance-masonry
     docker:
       - image: golang:1.8-alpine
     steps:

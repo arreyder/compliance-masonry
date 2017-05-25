@@ -5,8 +5,8 @@ import (
 
 	"fmt"
 
-	"github.com/opencontrol/compliance-masonry/lib/common"
-	"github.com/opencontrol/compliance-masonry/lib/components"
+	"github.com/arreyder/compliance-masonry/lib/common"
+	"github.com/arreyder/compliance-masonry/lib/components"
 )
 
 // componentsMap struct is a thread-safe structure mapping for components

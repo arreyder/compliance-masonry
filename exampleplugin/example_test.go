@@ -5,8 +5,8 @@ import (
 	. "github.com/onsi/gomega"
 	. "github.com/onsi/gomega/gbytes"
 	. "github.com/onsi/gomega/gexec"
-	"github.com/opencontrol/compliance-masonry/lib/common"
-	"github.com/opencontrol/compliance-masonry/lib/common/mocks"
+	"github.com/arreyder/compliance-masonry/lib/common"
+	"github.com/arreyder/compliance-masonry/lib/common/mocks"
 	"github.com/stretchr/testify/assert"
 	"os"
 	"os/exec"
@@ -84,12 +84,12 @@ func cleanupOpencontrolWorkspace() {
 }
 
 func Masonry(args ...string) *Session {
-	path, err := Build("github.com/opencontrol/compliance-masonry")
+	path, err := Build("github.com/arreyder/compliance-masonry")
 	Expect(err).NotTo(HaveOccurred())
 	return createCommand(path, args...)
 }
 func Plugin(args ...string) *Session {
-	path, err := Build("github.com/opencontrol/compliance-masonry/exampleplugin")
+	path, err := Build("github.com/arreyder/compliance-masonry/exampleplugin")
 	Expect(err).NotTo(HaveOccurred())
 	return createCommand(path, args...)
 }
